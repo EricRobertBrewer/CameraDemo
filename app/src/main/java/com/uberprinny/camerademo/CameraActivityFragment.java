@@ -49,6 +49,7 @@ public class CameraActivityFragment extends Fragment implements SurfaceHolder.Ca
                 mCamera.takePicture(null, null, null, null);
             }
         });
+        mShutterButton.setVisibility(View.VISIBLE);
 
         mGalleryButton = (Button) v.findViewById(R.id.camera_button_gallery);
         mGalleryButton.setOnClickListener(new View.OnClickListener() {
@@ -57,6 +58,7 @@ public class CameraActivityFragment extends Fragment implements SurfaceHolder.Ca
 
             }
         });
+        mGalleryButton.setVisibility(View.VISIBLE);
 
         mDeleteButton = (Button) v.findViewById(R.id.camera_button_delete);
         mDeleteButton.setOnClickListener(new View.OnClickListener() {
@@ -65,6 +67,7 @@ public class CameraActivityFragment extends Fragment implements SurfaceHolder.Ca
 
             }
         });
+        mDeleteButton.setVisibility(View.GONE);
 
         return v;
     }

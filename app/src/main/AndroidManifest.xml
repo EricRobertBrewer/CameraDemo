@@ -29,7 +29,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.uberprinny.camerademo.MainActivity" />
         </activity>
-
+        <activity
+            android:name=".Camera2Activity"
+            android:label="@string/title_activity_camera2"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.uberprinny.camerademo.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
